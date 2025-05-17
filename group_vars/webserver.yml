@@ -1,0 +1,15 @@
+---
+# Настройки Nginx
+nginx_port: 80
+nginx_ssl_port: 443
+nginx_user: nginx
+nginx_worker_processes: auto
+nginx_server_name: "{{ ansible_host }}"
+nginx_root: /usr/share/nginx/html
+nginx_index: index.html
+nginx_conf_template: nginx.conf.j2
+nginx_site_template: default.conf.j2
+
+# Настройки SSH
+ssh_key_path: ~/.ssh/id_rsa_ansible_nginx
+ansible_user: medok-devops
